@@ -72,3 +72,5 @@ gem 'jp_prefecture'
 gem 'dotenv-rails'
 
 gem "rename"
+
+gem 'whenever', require: false
