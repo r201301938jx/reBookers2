@@ -26,6 +26,7 @@
   <% else %>
     <%= link_to "フォローする", user_relationships_path(user.id), method: :post, class: "btn btn-success" %>
   <% end %>
+  <%= link_to 'chatを始める', chat_path(user.id) %>
 <% end %>
 <!-- フォローボタン -->
 <% if user == current_user %>

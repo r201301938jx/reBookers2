@@ -19,7 +19,7 @@
 <% if @user == current_user %>
   <h2>Your MAP</h2>
   <div id='map' class="<%= @user.prefecture_code + @user.city + @user.street %>"></div>
-<% end %>
+<% end %> 
 <style>
 #map{
   height: 400px;

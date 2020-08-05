@@ -23,6 +23,10 @@ class User < ApplicationRecord
   validates :city, presence: true
   validates :street, presence: true
 
+  has_many :chats
+  has_many :user_rooms
+  has_many :rooms, through: :user_rooms
+
   def follow(user_id)
     follower.create(followed_id: user_id)
   end
